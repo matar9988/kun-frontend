@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles.scss",
+              "node_modules/plyr/dist/plyr.css"
             ],
             "scripts": []
           },
@@ -87,7 +89,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles.scss",
+              "node_modules/plyr/dist/plyr.css"
             ],
             "scripts": []
           }
