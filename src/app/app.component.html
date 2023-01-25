@@ -1,6 +1,9 @@
-<input type="file" (change)="onFileChanged($event)"  #fileInput>
-<button (click)="uploadFile()">Upload</button>
+<div class="loading" *ngIf="loading">Loading, please wait.</div>
 
-<plyr style="display: block; width: 640px;" plyrTitle="Video 1" [plyrPlaysInline]="true" [plyrSources]="videoSources" (plyrInit)="player = $event" (plyrPlay)="played($event)"></plyr>
-
-<button (click)="play()">Play</button>
+<div class="video">
+  <div>
+    <input type="file" (change)="onFileChanged($event)"  #fileInput>
+    <button (click)="uploadFile()">Upload</button>
+  </div>
+  <plyr [plyrDriver]="hlsjsDriver"  style="display: block; width: 640px;" plyrTitle="Video 1" [plyrPlaysInline]="true" [plyrOptions]="options" [plyrSources]="videoSources" (plyrInit)="player = $event" (plyrPlay)="played($event)"></plyr>
+</div>

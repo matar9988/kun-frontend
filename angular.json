@@ -93,7 +93,7 @@
               "src/styles.scss",
               "node_modules/plyr/dist/plyr.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/hls.js/dist/hls.min.js.map"]
           }
         }
       }
